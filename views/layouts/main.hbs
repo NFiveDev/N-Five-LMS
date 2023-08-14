@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class=" h-full">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,14 @@
     <script src="/static/head-bundle.js"></script>
     <title>Document</title>
 </head>
-<body>
-    {{> navbar }}
+
+<body class=" min-h-screen">
+    <header class=" max-w-screen-xl mx-auto">
+            {{> navbar }}
+    </header>
+
     {{{ body }}}
     {{> footer }}
 </body>
+
 </html>
