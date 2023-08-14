@@ -18,7 +18,7 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "tail:watch": "npx tailwindcss -i ./src/input.css -o ./dist/tail-out.css --watch",
+    "tail:watch": "npx tailwindcss -i ./client/src/input.css -o ./client/dist/tail-out.css --watch",
     "tail:build": "npx tailwindcss -i ./client/src/input.css -o ./client/dist/tail-out.css",
     "build:client": "webpack"
   },
@@ -44,6 +44,7 @@
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "daisyui": "^3.5.1",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
