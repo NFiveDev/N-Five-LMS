@@ -3,11 +3,11 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    main: './client/src/index.js',
-    head: './client/src/head.js',
+    main: './public/src/index.js',
+    head: './public/src/head.js',
   },
   output: {
     filename: '[name]-bundle.js',
-    path: path.resolve(__dirname, 'client', 'dist'),
+    path: path.resolve(__dirname, 'static', 'dist'),
   },
 };

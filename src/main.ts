@@ -15,7 +15,7 @@ const hbs = create(hbsConfiguration);
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
-  app.useStaticAssets(join(__dirname, '..', 'client/dist'), {
+  app.useStaticAssets(join(__dirname, '..', 'public/static'), {
     prefix: '/static',
   });
   app.setBaseViewsDir(join(__dirname, '..', 'views'));

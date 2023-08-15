@@ -18,9 +18,9 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "tail:watch": "npx tailwindcss -i ./client/src/input.css -o ./client/dist/tail-out.css --watch",
-    "tail:build": "npx tailwindcss -i ./client/src/input.css -o ./client/dist/tail-out.css",
-    "build:client": "webpack"
+    "tail:watch": "npx tailwindcss -i ./public/src/input.css -o ./public/static/dist/tail-out.css --watch",
+    "tail:build": "npx tailwindcss -i ./public/src/input.css -o /public/static/dist/tail-out.css",
+    "build:client": "webpack --config ./public/webpack.config.js"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
@@ -30,6 +30,7 @@
     "express-handlebars": "^7.1.2",
     "hbs": "^4.2.0",
     "htmx.org": "^1.9.4",
+    "preline": "^1.9.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.1"
   },
@@ -44,7 +45,6 @@
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
-    "daisyui": "^3.5.1",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
