@@ -20,7 +20,8 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "tail:watch": "npx tailwindcss -i ./public/src/input.css -o ./public/static/dist/tail-out.css --watch",
     "tail:build": "npx tailwindcss -i ./public/src/input.css -o /public/static/dist/tail-out.css",
-    "build:client": "webpack --config ./public/webpack.config.js"
+    "build:client": "webpack --config ./public/webpack.config.js",
+    "watch:client": "webpack --config ./public/webpack.config.js --watch"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",

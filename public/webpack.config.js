@@ -2,6 +2,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: {
     main: './public/src/index.js',
     head: './public/src/head.js',

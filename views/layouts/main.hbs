@@ -10,12 +10,12 @@
     <title>Document</title>
 </head>
 
-<body id="id-of-body" class=" min-h-screen flex flex-col justify-between font-sans overflow-hidden">
+<body id="id-of-body" class=" min-h-screen flex flex-col justify-between font-sans">
 
     {{> navbar }}
 
     <main class=" flex-1 dark:bg-slate-600">
-        <div class="max-w-screen-xl mx-auto overflow-auto">
+        <div class="max-w-screen-xl mx-auto">
             {{{ body }}}
         </div>
     </main>
@@ -24,6 +24,8 @@
             {{> footer }}
         </div>
     </div>
+    
+    <script src="/static/dist/main-bundle.js"></script>
 </body>
 
 </html>
